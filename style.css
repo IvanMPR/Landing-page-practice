@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(255, 255, 255);
+  line-height: 1.5;
+  position: relative;
+}
+
+.container {
+  max-width: 110rem;
+  margin: auto;
+}
+.dark-text {
+  color: #333;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 33, 61, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav {
+  width: 100%;
+  background: rgb(20, 33, 61);
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 3rem;
+  color: rgb(252, 163, 17);
+  padding: 3rem 1rem 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: rgb(252, 163, 17);
+  padding: 3rem 1rem 1rem;
+}
+
+p {
+  font-size: 1.8rem;
+  padding: 1rem;
+  color: white;
+}
+.sign-in {
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 1.5rem;
+  cursor: pointer;
+  border: 2px solid rgb(252, 163, 17);
+
+  background: rgb(252, 163, 17);
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.sign-in:hover {
+  border: 2px solid white;
+  color: white;
+}
+.sign-in:active {
+  transform: translateY(2px);
+}
+i {
+  color: white;
+  transition: all 0.2s;
+}
+section {
+  text-align: justify;
+  padding: 1rem;
+}
+
+ul {
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+}
+.hamburger-menu {
+  position: absolute;
+  top: 0%;
+  left: 2%;
+  background: hsl(219, 59%, 7%);
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(219, 59%, 7%);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.hamburger-menu:hover {
+  border: 1px solid rgb(252, 163, 17);
+}
+.hamburger-menu:hover i {
+  color: rgb(252, 163, 17);
+}
+
+/* ************************************* */
+
+.form-wrapper {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form {
+  box-shadow: 0 2px 5px 5px rgba(29, 53, 87, 0.1);
+  background: #f1faee;
+  width: 40rem;
+  height: 60rem;
+  border-radius: 0.5rem;
+  margin-top: 7rem;
+}
+
+.form-h2 {
+  text-align: center;
+  background: rgb(252, 163, 17);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  color: rgb(20, 33, 61);
+  margin-top: 0;
+  padding: 1.5rem 0;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid rgb(20, 33, 61);
+}
+
+input {
+  width: 90%;
+  padding: 0.5rem;
+  font-size: 1.8rem;
+}
+/* *** Placeholder styling *** */
+/* Chrome/Opera/Safari */
+input::-webkit-input-placeholder {
+  color: rgba(168, 218, 220, 0.7);
+  font-style: italic;
+  font-size: 1.6rem;
+}
+/* Firefox 19+ */
+input::-moz-placeholder {
+  color: rgba(168, 218, 220, 0.7);
+  font-style: italic;
+  font-size: 1.6rem;
+}
+/* IE 10+ */
+input:-ms-input-placeholder {
+  color: rgba(168, 218, 220, 0.7);
+  font-style: italic;
+  font-size: 1.6rem;
+}
+/* Firefox 18- */
+input:-moz-placeholder {
+  color: rgba(168, 218, 220, 0.7);
+  font-style: italic;
+  font-size: 1.6rem;
+}
+
+label {
+  align-self: flex-start;
+  margin-left: 5%;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.error {
+  margin-top: 0.5rem;
+  text-align: left;
+  width: 90%;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.btn-form {
+  width: 90%;
+  display: block;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 10rem auto;
+  cursor: pointer;
+  border: 2px solid rgb(252, 163, 17);
+  background: rgb(252, 163, 17);
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.btn-form:hover {
+  border: 2px solid rgb(20, 33, 61);
+}
+
+.btn-form:active {
+  transform: translateY(2px);
+}
+
+/* button {
+  border: 1px solid rgb(29, 53, 87);
+  padding: 0.8rem;
+  width: 90%;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  display: block;
+  margin: 3rem auto 0;
+  background: rgb(69, 123, 157);
+  color: rgb(255, 255, 255);
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background: hsl(203, 39%, 35%);
+} */
+.fade-in-modal {
+  animation: fade-in 0.8s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out-modal {
+  animation: fade-out 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
