@@ -2,7 +2,13 @@
 
 const signInBtn = document.querySelector('.sign-in');
 const body = document.querySelector('body');
+const hamburger = document.querySelector('.hamburger-menu');
+const sideMenu = document.querySelector('aside');
 
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('shifted-right');
+  sideMenu.classList.toggle('shifted-left');
+});
 signInBtn.addEventListener('click', renderForm);
 
 window.addEventListener('click', e => {
@@ -28,7 +34,7 @@ function renderForm() {
   const html = `<div class="overlay fade-in-modal">
    <div class="form-wrapper">
      <form>
-       <h2 class="form-h2">Sign Up</h2>
+       <h2 class="form-h2">Sign In</h2>
        <div class="username elements">
          <label for="username">Username</label>
          <input
