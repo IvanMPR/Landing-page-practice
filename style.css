@@ -13,7 +13,7 @@ body {
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   background: rgb(255, 255, 255);
-  line-height: 1.5;
+  line-height: 1.4;
   position: relative;
 }
 
@@ -39,6 +39,7 @@ nav {
   background: rgb(20, 33, 61);
   text-align: center;
   position: relative;
+  border-bottom: 2px solid rgb(252, 163, 17);
 }
 
 h1 {
@@ -79,7 +80,7 @@ p {
   transform: translateY(2px);
 }
 i {
-  color: white;
+  color: rgb(252, 163, 17);
   transition: all 0.2s;
 }
 section {
@@ -104,7 +105,7 @@ ul {
   transition: all 0.2s;
 }
 .hamburger-menu:hover {
-  border: 1px solid rgb(252, 163, 17);
+  border: 1px solid white;
 }
 .hamburger-menu:hover i {
   color: rgb(252, 163, 17);
@@ -211,24 +212,79 @@ label {
 .btn-form:active {
   transform: translateY(2px);
 }
-
-/* button {
-  border: 1px solid rgb(29, 53, 87);
-  padding: 0.8rem;
-  width: 90%;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-size: 1.8rem;
-  display: block;
-  margin: 3rem auto 0;
-  background: rgb(69, 123, 157);
-  color: rgb(255, 255, 255);
-  transition: background-color 0.2s;
+.shifted-left {
+  position: absolute;
+  top: 0;
+  left: -12%;
+}
+.shifted-right {
+  position: absolute;
+  top: 0%;
+  left: 15%;
+}
+/* ************************************************ */
+/* aside element */
+aside {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: rgb(20, 33, 61);
+  height: 100%;
+  width: 12%;
+  z-index: 5;
+  border-right: 2px solid rgb(252, 163, 17);
+  transition: all 0.2s;
+}
+.icon-container {
+  padding-top: 2rem;
+  width: 100%;
+  height: 20%;
 }
 
-button:hover {
-  background: hsl(203, 39%, 35%);
-} */
+.icon-wrapper {
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 80%;
+  border-radius: 50%;
+  display: block;
+  margin: 2rem auto;
+  border: 2px solid white;
+}
+
+.ul-container {
+  width: 100%;
+}
+.dummy-ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  font-size: 1.8rem;
+}
+
+.dummy-li {
+  padding: 1rem 0;
+  border-bottom: 2px solid rgb(252, 163, 17);
+}
+
+a {
+  padding: 0 5rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s;
+  border-right: orangered 1px transparent;
+}
+a:hover {
+  color: rgb(252, 163, 17);
+  transform: translate(2rem);
+  border-right: 1px solid rgb(252, 163, 17);
+}
+
+/* ************************************************ */
 .fade-in-modal {
   animation: fade-in 0.8s;
 }
