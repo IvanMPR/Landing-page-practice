@@ -7,6 +7,7 @@ const sideMenu = document.querySelector('aside');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('shifted-right');
+  hamburger.classList.toggle('rotate-burger-right');
   sideMenu.classList.toggle('shifted-left');
 });
 signInBtn.addEventListener('click', renderForm);
