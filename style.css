@@ -39,7 +39,7 @@ nav {
   background: rgb(20, 33, 61);
   text-align: center;
   position: relative;
-  border-bottom: 2px solid rgb(252, 163, 17);
+  border-bottom: 2px solid white;
 }
 
 h1 {
@@ -222,6 +222,10 @@ label {
   top: 0%;
   left: 15%;
 }
+.rotate-burger-right {
+  animation: rotateRight 0.5s alternate forwards;
+}
+
 /* ************************************************ */
 /* aside element */
 aside {
@@ -232,7 +236,7 @@ aside {
   height: 100%;
   width: 12%;
   z-index: 5;
-  border-right: 2px solid rgb(252, 163, 17);
+  border-right: 2px solid white;
   transition: all 0.2s;
 }
 .icon-container {
@@ -268,7 +272,7 @@ img {
 
 .dummy-li {
   padding: 1rem 0;
-  border-bottom: 2px solid rgb(252, 163, 17);
+  border-bottom: 2px solid white;
 }
 
 a {
@@ -309,5 +313,21 @@ a:hover {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes rotateRight {
+  0% {
+    transform: 0;
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+/* ************************* */
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 40%;
   }
 }
