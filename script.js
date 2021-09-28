@@ -5,11 +5,12 @@ const body = document.querySelector('body');
 const hamburger = document.querySelector('.hamburger-menu');
 const sideMenu = document.querySelector('aside');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('shifted-right');
-  hamburger.classList.toggle('rotate-burger-right');
+hamburger.addEventListener('click', function () {
+  this.classList.toggle('shifted-right');
+  this.classList.toggle('rotate-burger-right');
   sideMenu.classList.toggle('shifted-left');
 });
+
 signInBtn.addEventListener('click', renderForm);
 
 window.addEventListener('click', e => {
