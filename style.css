@@ -1,3 +1,8 @@
+:root {
+  --yellow-color: #fca311;
+  --blue-color: #14213d;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,15 +17,57 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  background: rgb(255, 255, 255);
+  background: #fff;
   line-height: 1.4;
   position: relative;
 }
+
+nav {
+  width: 100%;
+  background: var(--blue-color);
+  text-align: center;
+  position: relative;
+  border-bottom: 2px solid #fff;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--yellow-color);
+  padding: 3rem 1rem 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--yellow-color);
+  padding: 3rem 1rem 1rem;
+}
+
+p {
+  font-size: 1.8rem;
+  padding: 1rem;
+  color: white;
+}
+
+i {
+  color: var(--yellow-color);
+  transition: all 0.2s;
+}
+section {
+  text-align: justify;
+  padding: 1rem;
+}
+
+ul {
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+}
+/* Utility classes */
 
 .container {
   max-width: 110rem;
   margin: auto;
 }
+
 .dark-text {
   color: #333;
 }
@@ -34,39 +81,16 @@ body {
   left: 0;
 }
 
-nav {
-  width: 100%;
-  background: rgb(20, 33, 61);
-  text-align: center;
-  position: relative;
-  border-bottom: 2px solid white;
-}
-
-h1 {
-  font-size: 3rem;
-  color: rgb(252, 163, 17);
-  padding: 3rem 1rem 1rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-  color: rgb(252, 163, 17);
-  padding: 3rem 1rem 1rem;
-}
-
-p {
-  font-size: 1.8rem;
-  padding: 1rem;
-  color: white;
-}
+/* ****************** */
+/* Button for opening modal */
 .sign-in {
   padding: 1rem 3rem;
   font-size: 1.8rem;
   text-transform: uppercase;
   margin: 1.5rem;
   cursor: pointer;
-  border: 2px solid rgb(252, 163, 17);
-  background: rgb(252, 163, 17);
+  border: 2px solid var(--yellow-color);
+  background: var(--yellow-color);
   border-radius: 0.5rem;
   transition: all 0.2s;
 }
@@ -78,19 +102,7 @@ p {
 .sign-in:active {
   transform: translateY(2px);
 }
-i {
-  color: rgb(252, 163, 17);
-  transition: all 0.2s;
-}
-section {
-  text-align: justify;
-  padding: 1rem;
-}
-
-ul {
-  font-size: 1.8rem;
-  padding: 1rem 3rem;
-}
+/* hamburger */
 .hamburger-menu {
   position: absolute;
   top: 0%;
@@ -107,11 +119,11 @@ ul {
   border: 1px solid white;
 }
 .hamburger-menu:hover i {
-  color: rgb(252, 163, 17);
+  color: var(--yellow-color);
 }
 
 /* ************************************* */
-
+/* modal form */
 .form-wrapper {
   position: absolute;
   top: 40%;
@@ -130,14 +142,14 @@ form {
 
 .form-h2 {
   text-align: center;
-  background: rgb(252, 163, 17);
+  background: var(--yellow-color);
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
-  color: rgb(20, 33, 61);
+  color: var(--blue-color);
   margin-top: 0;
   padding: 1.5rem 0;
   margin-bottom: 4rem;
-  border-bottom: 2px solid rgb(20, 33, 61);
+  border-bottom: 2px solid var(--blue-color);
 }
 
 input {
@@ -177,19 +189,14 @@ label {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
+
 .elements {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
 }
-.error {
-  margin-top: 0.5rem;
-  text-align: left;
-  width: 90%;
-  font-style: italic;
-  font-size: 1.2rem;
-}
+/* button to close modal */
 .btn-form {
   width: 90%;
   display: block;
@@ -198,14 +205,14 @@ label {
   text-transform: uppercase;
   margin: 10rem auto;
   cursor: pointer;
-  border: 2px solid rgb(252, 163, 17);
-  background: rgb(252, 163, 17);
+  border: 2px solid var(--yellow-color);
+  background: var(--yellow-color);
   border-radius: 0.5rem;
   transition: all 0.2s;
 }
 
 .btn-form:hover {
-  border: 2px solid rgb(20, 33, 61);
+  border: 2px solid var(--blue-color);
 }
 
 .btn-form:active {
@@ -226,12 +233,12 @@ label {
 }
 
 /* ************************************************ */
-/* aside element */
+/*  element  that shifts from left*/
 aside {
   position: absolute;
   top: 0%;
   left: 0%;
-  background: rgb(20, 33, 61);
+  background: var(--blue-color);
   height: 100%;
   width: 20%;
   z-index: 5;
@@ -257,7 +264,6 @@ img {
   border-radius: 50%;
   display: block;
   margin: 2rem auto;
-  /* border: 1px solid white; */
 }
 
 .ul-container {
@@ -283,12 +289,11 @@ a {
   border-right: orangered 1px transparent;
 }
 a:hover {
-  color: rgb(252, 163, 17);
-  /* transform: translate(2rem); */
-  border-right: 1px solid rgb(252, 163, 17);
+  color: var(--yellow-color);
+  border-right: 1px solid var(--yellow-color);
 }
 
-/* ************************************************ */
+/* animations and media queries */
 .fade-in-modal {
   animation: fade-in 0.8s;
 }
@@ -325,7 +330,7 @@ a:hover {
   }
 }
 
-/* ************************* */
+/* media queries */
 @media screen and (max-width: 320px) {
   html {
     font-size: 40%;
