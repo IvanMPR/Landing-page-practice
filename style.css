@@ -331,4 +331,10 @@ a:hover {
   html {
     font-size: 40%;
   }
+  aside {
+    width: 22%;
+  }
+  .shifted-left {
+    left: -28%;
+  }
 }
