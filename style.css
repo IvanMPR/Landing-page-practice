@@ -333,7 +333,7 @@ a:hover {
   }
   aside {
     width: 42%;
-    opacity: 0.9;
+    /* opacity: 0.9; */
   }
   .shifted-left {
     left: -48%;
