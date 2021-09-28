@@ -333,12 +333,73 @@ a:hover {
   }
   aside {
     width: 42%;
-    /* opacity: 0.9; */
+  }
+
+  .shifted-left {
+    left: -48%;
+  }
+
+  .shifted-right {
+    left: 85%;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  html {
+    font-size: 44%;
+  }
+  aside {
+    width: 42%;
+  }
+
+  .shifted-left {
+    left: -48%;
+  }
+
+  .shifted-right {
+    left: 85%;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 414px) {
+  html {
+    font-size: 48%;
+  }
+  aside {
+    width: 42%;
+  }
+
+  .shifted-left {
+    left: -48%;
+  }
+
+  .shifted-right {
+    left: 85%;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  html {
+    font-size: 52%;
+  }
+  aside {
+    width: 30%;
   }
   .shifted-left {
     left: -48%;
   }
 
+  .shifted-right {
+    left: 85%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 58%;
+  }
+  aside {
+    width: 30%;
+  }
+  .shifted-left {
+    left: -48%;
+  }
   .shifted-right {
     left: 85%;
   }
