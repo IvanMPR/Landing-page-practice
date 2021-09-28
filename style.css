@@ -332,9 +332,14 @@ a:hover {
     font-size: 40%;
   }
   aside {
-    width: 22%;
+    width: 42%;
+    opacity: 0.9;
   }
   .shifted-left {
-    left: -28%;
+    left: -48%;
+  }
+
+  .shifted-right {
+    left: 85%;
   }
 }
