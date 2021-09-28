@@ -214,12 +214,12 @@ label {
 .shifted-left {
   position: absolute;
   top: 0;
-  left: -20%;
+  left: -25%;
 }
 .shifted-right {
   position: absolute;
   top: 0%;
-  left: 18%;
+  left: 22%;
 }
 .rotate-burger-right {
   animation: rotateRight 0.5s alternate forwards;
@@ -233,7 +233,7 @@ aside {
   left: 0%;
   background: rgb(20, 33, 61);
   height: 100%;
-  width: 15%;
+  width: 20%;
   z-index: 5;
   border-right: 1px solid white;
   transition: all 0.2s;
