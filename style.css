@@ -219,7 +219,7 @@ label {
 .shifted-right {
   position: absolute;
   top: 0%;
-  left: 15%;
+  left: 18%;
 }
 .rotate-burger-right {
   animation: rotateRight 0.5s alternate forwards;
