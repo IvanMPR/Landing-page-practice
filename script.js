@@ -18,6 +18,7 @@ window.addEventListener('click', e => {
     removeForm();
   }
 });
+
 window.addEventListener('click', e => {
   if (e.target.classList.contains('btn-form')) {
     e.preventDefault();
@@ -32,6 +33,7 @@ function removeForm() {
     overlay.remove();
   }, 500);
 }
+
 function renderForm() {
   const html = `<div class="overlay fade-in-modal">
    <div class="form-wrapper">
